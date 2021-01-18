@@ -23,8 +23,11 @@ namespace Practica
             Console.WriteLine("Agregando " + Sauce.Name);
             Cheese = IngredientFactory.CreateCheese();
             Console.WriteLine("Agregando " + Cheese.Name);
-            Clams = IngredientFactory.CreateClams();
-            Console.WriteLine("Agregando " + Clams.Name);
+            Veggies = IngredientFactory.CreateVeggies();
+            foreach (var V in Veggies)
+            {
+                Console.WriteLine("Agregando " + V.Name);
+            }
         }
     }
 }
